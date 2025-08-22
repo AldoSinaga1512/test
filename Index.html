@@ -60,8 +60,8 @@
   <script>
     const { createClient } = supabase
     // 🔑 Ganti dengan project kamu
-    const supabaseUrl = "https://ancocaanwwvoervinjlr.supabase.co"      // SUPABASE_URL
-    const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFuY29jYWFud3d2b2VydmluamxyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU4MzQ2NTEsImV4cCI6MjA3MTQxMDY1MX0.F5_txcDVPRbe30s29FKNOiTZfhJGwkw1vJUiUK4MsO0"                // SUPABASE_ANON_KEY
+    const supabaseUrl = "https://ancocaanwwvoervinjlr.supabase.co"// SUPABASE_URL
+    const supabaseKey = "process.env.SUPABASE_KEY"// SUPABASE_ANON_KEY
     const db = createClient(supabaseUrl, supabaseKey)
 
     async function loadMenus() {
